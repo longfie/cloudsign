@@ -3,7 +3,7 @@
 	require_once("../TFcore/common.php");
 	include_once ROOT.'TFcore/class_expand/PHPMailer/class.phpmailer.php';
 	include_once ROOT.'TFcore/class_expand/PHPMailer/class.smtp.php';
-	if(!GET('key')===TF_Data('corn'))exit;
+	if(GET('key')!==TF_Data('corn'))exit;
 	$websiteuser=$_GET['websiteuser'];
 	$usermail=$_GET['usermail'];
 	$Body = $_GET['body'];
