@@ -10,10 +10,6 @@
 	$money = $_GET['money'];
 	$Name = TF_Data('name');
 	$Domain = Domain();
-/*	$Host = 'smtp.ym.163.com';
-	$Port = '994';
-	$Username = 'yqlyy@mail.eirds.cn';
-	$Password = '2001923.lak';*/
 
   switch ($Body) {
     case 1:
