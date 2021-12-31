@@ -1,0 +1,229 @@
+.img-avatar {
+    position: relative;
+    background-color: #f9fafb;
+    color: #8b95a5;
+}
+
+.img-avatar img {
+    width: 64px;
+    height: 64px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: bottom;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.8);
+}
+
+/* 尺寸 */
+.img-avatar-36,
+.img-avatar-36 img {
+    width: 36px;
+    height: 36px;
+}
+
+.img-avatar-36 {
+    line-height: 36px;
+}
+
+.img-avatar-48 img {
+    width: 48px;
+    height: 48px;
+}
+
+.img-avatar-96,
+.img-avatar-96 img {
+    width: 96px;
+    height: 96px;
+}
+
+.img-avatar-96 {
+    line-height: 96px;
+}
+
+.img-avatar-128,
+.img-avatar-128 img {
+    width: 128px;
+    height: 128px;
+}
+
+.img-avatar-128 {
+    line-height: 128px;
+}
+
+/* 状态 */
+[class*='status-'] {
+    position: relative;
+    display: inline-block;
+}
+
+[class*='status-']::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    bottom: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background-color: #33cabb;
+}
+
+[class*='status-'].img-avatar-36::after {
+    right: 0px;
+}
+
+[class*='status-'].img-avatar-48::after {
+    right: 4px;
+}
+
+[class*='status-'].img-avatar-96::after {
+    right: 15px;
+    width: 12px;
+    height: 12px;
+}
+
+[class*='status-'].img-avatar-128::after {
+    right: 20px;
+    width: 16px;
+    height: 16px;
+}
+
+.status-primary::after {
+    background-color: #33cabb;
+}
+
+.status-danger::after {
+    background-color: #f96868;
+}
+
+.status-success::after {
+    background-color: #15c377;
+}
+
+.status-info::after {
+    background-color: #48b0f7;
+}
+
+.status-warning::after {
+    background-color: #faa64b;
+}
+
+.status-dark::after {
+    background-color: #465161;
+}
+
+/* 带文字 */
+.img-avatar-pill {
+    width: auto;
+    border-radius: 32px;
+    color: #f5f6f7;
+    text-transform: none;
+    letter-spacing: 0;
+    background-color: #33cabb;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.img-avatar-pill:hover {
+    background-color: #f5f6f7;
+    color: #333;
+}
+
+.img-avatar-pill.img-avatar-36 {
+    border-radius: 18px;
+}
+
+.img-avatar-pill.img-avatar-48 {
+    border-radius: 24px;
+}
+
+.img-avatar-pill.img-avatar-96 {
+    border-radius: 48px;
+}
+
+.img-avatar-pill.img-avatar-128 {
+    border-radius: 64px;
+}
+
+.img-avatar-pill span {
+    padding-right: 18px;
+    padding-left: 8px;
+}
+
+.img-avatar-pill.img-avatar-36 span {
+    padding-right: 14px;
+}
+
+.img-avatar-pill.img-avatar-48 span {
+    padding-right: 24px;
+}
+
+.img-avatar-pill.img-avatar-96 span {
+    padding-right: 32px;
+    padding-left: 12px;
+}
+
+.img-avatar-pill.img-avatar-128 span {
+    padding-right: 48px;
+    padding-left: 12px;
+}
+
+/* 头像列表 */
+.img-avatar-list:not(.img-avatar-list-overlap) .img-avatar {
+    margin: 2px;
+}
+
+/* 头像叠加 */
+.img-avatar-list-overlap .img-avatar {
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .15s linear;
+    transition: .15s linear;
+    cursor: pointer;
+}
+
+.img-avatar-list-overlap .img-avatar+.img-avatar {
+    margin-left: -26px;
+}
+
+.img-avatar-list-overlap .img-avatar+.img-avatar-36 {
+    margin-left: -18px;
+}
+
+.img-avatar-list-overlap .img-avatar+.img-avatar-48 {
+    margin-left: -24px;
+}
+
+.img-avatar-list-overlap .img-avatar+.img-avatar-96 {
+    margin-left: -48px;
+}
+
+.img-avatar-list-overlap .img-avatar+.img-avatar-128 {
+    margin-left: -64px;
+}
+
+.img-avatar-list-overlap .img-avatar:hover+.img-avatar {
+    margin-left: 0;
+}
+
+/* 更多用户 */
+.img-avatar-more span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.img-avatar-more:hover span {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+}

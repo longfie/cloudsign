@@ -1,0 +1,12 @@
+上传程序至服务器或虚拟空间，访问首页即可进入安装引导
+如果要使网站能够正常签到请监控以下地址
+你的域名/Monitor/
+VIP的签到:你的域名/Monitor/tbsign.corn.php?key=你后台设置的密匙,请记得修改
+免费的签到:你的域名/Monitor/tbsign.freecorn.php?key=你后台设置的密匙,请记得修改
+如https://www.yunsign.net/Monitor/tbsign.corn.php?key=123456
+
+请在TFcore/config.php填写相关信息,不然某些功能用不了
+支付和机器人暂时先不能用
+
+本人太懒,所以其他功能请等待下一版本.你的点赞是我更新的动
+作者QQ1790716272  交流群:936838495

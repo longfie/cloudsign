@@ -1,0 +1,254 @@
+/*----------------------------------------------
+*
+* [Default Stylesheet]
+*
+* Theme    : Leverage
+* Version  : 2.1
+* Author   : Codings
+* Support  : codings.dev
+* 
+----------------------------------------------*/
+
+/*----------------------------------------------
+
+[ALL CONTENTS]
+
+1. Root
+2. Button
+3. Effects
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+1. Root
+----------------------------------------------*/
+
+/* #region Root */
+
+:root {
+    --h1-font: 'Gilroy', sans-serif;
+    --h1-size: 6rem;
+    --h1-m-size: 3.5rem;
+    --h1-weight: 900;
+    --h1-m-weight: 900;
+    
+    --h2-font: 'Poppins', sans-serif;
+    --h2-size: 3rem;
+    --h2-m-size: 2rem;
+    --h2-weight: 600;
+    --h2-m-weight: 600;
+    
+    --h3-font: 'Poppins', sans-serif;
+    --h3-size: 1.5rem;
+    --h3-m-size: 1.3rem;
+    --h3-weight: 600;
+    --h3-m-weight: 600;
+    
+    --p-font: 'Poppins', sans-serif;
+    --p-size: 1rem;
+    --p-m-size: 1rem;
+    --p-weight: 400;
+    --p-m-weight: 400;
+
+    --header-bg-color: #111111;
+    --nav-brand-height: 35px;
+    --nav-item-color: #f5f5f5;
+    --top-nav-item-color: #f5f5f5;
+    --hero-bg-color: #111111;
+    --footer-brand-height: 80px;
+    
+    --primary-button-color: #f5f5f5;
+    --primary-button-hover-color: #f5f5f5;
+    
+    --dark-button-color: #f5f5f5;
+    --dark-button-hover-color: #f5f5f5;
+    --dark-button-bg-color: #040402;
+
+    --primary-color: #dd1e4b;
+    --secondary-color: #E0040B;
+    
+    --white-color: #f9f9f9;
+    --black-color: #040402;
+    --dark-grey-color: #191919;
+
+    --primary-t-color: #2f323a;
+    --secondary-t-color: #f5f5f5; 
+    --primary-p-color: #6f6f6f;
+    --secondary-p-color: #8e8e8e;
+    --primary-b-color: #f5f5f5;
+    --primary-l-color: rgba(0, 0, 0, .25);
+    --secondary-l-color: rgba(255, 255, 255, 0.25);
+
+    --valid-color: #007a4d;
+    --invalid-color: #e34f4f;
+
+    --primary-bg-color: #f5f5f5;
+    --primary-bg-color-2: #eeeeee;
+    --primary-bg-color-3: #e5e5e5;
+
+    --secondary-bg-color: #040402;
+    --secondary-bg-color-2: #111111;
+    --secondary-bg-color-3: #191919;
+
+    --translucent-dark-background-color: #ffffff09;
+
+    --card-bg-color: #f5f5f5;
+
+    --footer-bg-color: #111111;
+}
+
+/* #endregion Root */
+
+/*----------------------------------------------
+2. Button
+----------------------------------------------*/
+
+/* #region Button */
+
+.buttons {
+    position: relative;
+    z-index: 2;
+}
+
+.primary-button,
+.primary-button:visited, .primary-button:active {
+    position: relative;
+    z-index: 2;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: var(--primary-b-color);
+    font-weight: 500;
+}
+
+.conditional-settings .primary-button {
+    color: var(--primary-button-color);
+}
+
+.conditional-settings .primary-button:hover {
+    color: var(--primary-button-hover-color);
+}
+
+.primary-button:hover, .primary-button:focus {
+    background-color: var(--primary-color);
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    color: var(--primary-b-color);
+}
+
+.dark-button,
+.dark-button:visited, .dark-button:active {
+    position: relative;
+    z-index: 2;
+    padding: 10px 25px;
+    background-color: var(--hero-bg-color);
+    border-radius: 0;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.conditional-settings .dark-button {
+    color: var(--dark-button-color);
+    background-color: var(--dark-button-bg-color);
+}
+
+.conditional-settings .dark-button:hover {
+    color: var(--dark-button-hover-color);
+}
+
+.dark-button:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+}
+
+.dark-button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 0;
+    background-color: inherit;
+}
+
+.dark-button.inherit:after {
+    background-color: inherit;
+}
+
+.dark-button:hover, .dark-button:focus,
+.dark-button:hover:after, .dark-button:focus:after {
+    background-color: var(--primary-color);
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    color: var(--white-color);
+}
+
+footer .dark-button {
+    background-color: var(--footer-bg-color);
+}
+
+/* #endregion Button */
+
+/*----------------------------------------------
+3. Effect
+----------------------------------------------*/
+
+/* #region Effect */
+
+.effect-static-text {
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+         background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.effect-static-text i {
+    -webkit-text-fill-color: var(--primary-color);
+}
+
+.effect-motion-text,
+.effect-motion-hover:hover {
+    background-image: linear-gradient(to right, var(--primary-color) 20%, var(--primary-t-color) 40%, var(--primary-t-color) 60%, var(--primary-color) 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+         background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: effect 1s linear infinite;
+    animation: effect 1s linear infinite;
+}
+
+.effect-motion-text i,
+.effect-motion-hover:hover i {
+    -webkit-text-fill-color: var(--primary-color);
+}
+
+.effect-static-bg {
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+}
+
+.effect-motion-bg {
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-size: 200% auto;
+    -webkit-animation: effect 1s linear infinite;
+    animation: effect 1s linear infinite;
+}
+
+/* #endregion Effect */

@@ -1,0 +1,31 @@
+.list-chose span {
+    cursor: pointer;
+    background-color: #fff;
+    padding-right: 16px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear
+}
+
+.list-chose span input {
+    display: none;
+}
+
+.list-chose span:hover,
+.list-chose span.active {
+    border-color: #33cabb;
+}
+
+.list-chose span.active:after {
+    font-family: 'Material Design Icons';
+    content: "\f12c";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    -wekit-border-radius: 0 0 0 14px;
+    border-radius: 0 0 0 14px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #33cabb;
+    color: #fff;
+}

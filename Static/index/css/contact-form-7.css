@@ -1,0 +1,82 @@
+/*----------------------------------------------
+*
+* [Contact Form 7 Stylesheet]
+*
+* Theme    : Leverage
+* Version  : 1.0
+* Author   : Codings
+* Support  : codings.dev
+* 
+----------------------------------------------*/
+
+/*----------------------------------------------
+
+[ALL CONTENTS]
+
+1. General
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+1. General
+----------------------------------------------*/
+
+/* #region General */
+
+.nxg-contact-form-7 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.wpcf7-not-valid-tip {
+  color: var(--invalid-color);
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+  border-width: 1px;
+	border-color: var(--invalid-color);
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 15px;
+  padding: 10px 20px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-width: 1px;
+	border-color: var(--valid-color);
+	color: var(--valid-color);
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+  border-width: 1px;
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+  border-width: 1px;
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  border-width: 1px;
+	border-color: var(--invalid-color);
+	color: var(--invalid-color);
+}
+
+.wpcf7 .ajax-loader {
+  width: 24px;
+  height: 24px;
+  margin: 10px 0 10px 15px;
+  background-color: var(--primary-p-color);
+}
+
+.wpcf7 .ajax-loader::before {
+  background-color: var(--primary-bg-color);
+}
+
+/* #endregion General */
