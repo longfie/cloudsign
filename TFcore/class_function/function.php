@@ -476,7 +476,7 @@ function get_url($url_array, $wait_usec = 0)
 
 //判断是否是管理员
 function isadmin($admin){
-	if($admin==1 or $admin==704){
+	if($admin==1){
 		return true;
 	}else{
 		return false;
