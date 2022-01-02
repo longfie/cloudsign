@@ -303,7 +303,7 @@ function get_user_avatar($cookie)  //author : 一千零一夜 百度2020年更�
 		$ch = curl_init($tbs_url);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept','text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','Accept-Encoding','Accept-Encoding','Accept-Language','zh-CN,zh;q=0.9','Cache-Control','max-age=0','Connection','keep-alive','Host','tieba.baidu.com','User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4651.0 Safari/537.36','Upgrade-Insecure-Requests','1','Sec-Fetch-User','?1','Sec-Fetch-Site','none','Sec-Fetch-Mode','navigate','Sec-Fetch-Dest','document','sec-ch-ua-platform','"Windows"'));
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_COOKIE,'BDUSS= BDUSS=URjOWtHdURtY2pvZ1FxZkNwenlORWNSTFdPYTVNSlNpbXZhNHhyUU0tTUROOE5oRVFBQUFBJCQAAAAAAAAAAAEAAAB5yumpx-PM~V-2ZcmiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOqm2EDqpthe;STOKEN=d753931a67edf41d7077931a25f425d3a9097becbe90c2aa061c01199c77e129;  ');
+		curl_setopt($ch, CURLOPT_COOKIE,'BDUSS='.$cookie);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // 302 redirect
 	    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		$passport_html = curl_exec($ch);
@@ -320,7 +320,7 @@ function get_user_tbnum($cookie)  //author : 一千零一夜 百度2020年更新
 		$ch = curl_init($tbs_url);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept','text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','Accept-Encoding','Accept-Encoding','Accept-Language','zh-CN,zh;q=0.9','Cache-Control','max-age=0','Connection','keep-alive','Host','tieba.baidu.com','User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4651.0 Safari/537.36','Upgrade-Insecure-Requests','1','Sec-Fetch-User','?1','Sec-Fetch-Site','none','Sec-Fetch-Mode','navigate','Sec-Fetch-Dest','document','sec-ch-ua-platform','"Windows"'));
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_COOKIE,'BDUSS=');
+		curl_setopt($ch, CURLOPT_COOKIE,'BDUSS='.$cookie);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // 302 redirect
 	    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		$html = curl_exec($ch);
