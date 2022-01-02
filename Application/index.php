@@ -26,12 +26,10 @@
 
 //加载核心
 require('./core.php');
-
 //判断是否登录
 /*if (!TFYT('loginuser')) {
     exit("<script language='javascript'>alert('请先登录后再进行操作！');window.location.href='/?index=Login';</script>");
 }*/
-
 //获取URL
 $index = GET('main') ? GET('main') : 'index';
 
