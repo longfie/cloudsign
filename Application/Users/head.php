@@ -33,7 +33,6 @@ if(!defined('AUTHOR'))
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>后台系统 - <?=TF_Data('name');?></title>
     <link rel="icon" href="<?=$Userstatic.'images/';?>favicon.ico" type="image/ico">
     <meta name="keywords" content="<?=TF_Data('keywords');?>">
