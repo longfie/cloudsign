@@ -10,5 +10,4 @@ include_once __DIR__.'/TFcore/common.php';//加载天方框架
 
 TFcore::Template(TF_Data('template'));//加载首页
 
-
 //               代码加载完毕,就是如此简单 ︿(￣︶￣)︿
