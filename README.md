@@ -26,3 +26,4 @@
 下个版本将会支持更多的签到,将会采用插件化
 
 [点我进入云签官网](https://www.yunsign.net/)
+[点我进入博客](https://blog.eirds.cn/)
