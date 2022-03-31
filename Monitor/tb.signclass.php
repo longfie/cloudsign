@@ -42,9 +42,13 @@ class tbsign{
 
     public function loginstate(){
 
-       return self::TBinfo()['data']['is_login'];
+       return self::TBinfo()['data']['is_login']?self::TBinfo()['data']['is_login']:$this->loginstates();
     }
 
+    protected function loginstates(){
+       $is_login = json_decode($this->xCurl('http://tieba.baidu.com/dc/common/tbs','BDUSS='.$this->bduss,null,$this->firefox_header),true);
+        return $is_login['is_login'];
+    }
    public function TBinfo(){
        return json_decode($this->xCurl('https://tieba.baidu.com/mg/o/profile?format=json','BDUSS='.$this->bduss,null,$this->firefox_header),true);
     }
